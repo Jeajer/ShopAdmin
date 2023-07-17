@@ -47,9 +47,6 @@ const [data, setData] = useState([]);
     const dt = Object.values(items);
     const dataArray = Array.isArray(dt) ? dt : [];
     setData(dataArray);
-    
-    console.log("1", dataArray);
-    console.log("2", items)
   },[items])
   
 
@@ -72,8 +69,8 @@ const [data, setData] = useState([]);
               <TableCell className="tableCell">{row.id}</TableCell>
               <TableCell className="tableCell">
                 <div className="cellWrapper">
-                  <img src={row.img} alt="" className="image" />
-                  {row.name}
+                  <img src={row.imageUrl} alt="" className="image" />
+                  {row.title}
                 </div>
               </TableCell>
               <TableCell className="tableCell">{row.color}</TableCell>

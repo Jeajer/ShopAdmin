@@ -31,7 +31,11 @@ const DetailOrder = () => {
     const unsuborder = onSnapshot(doc(db, "Orders", id), (doc) => {
       const orderData = doc.data();
       setOrder(orderData);
-      setProduct(orderData.product);
+      const object = orderData.product.reduce((result, item, index) => {
+        result[index] = item;
+        return result;
+      }, {});
+      setProduct(object);
     });  
     
     // const unsubcus = onSnapshot(doc(db, "Users", order.idacc), (doc) => {
@@ -60,8 +64,9 @@ const DetailOrder = () => {
   // console.log("Pro data: ", product);
 
   const Status = [
-    { value: 'Approved', label: 'Approved' },
-    { value: 'Pending', label: 'Pending' },
+    { value: 'Delivered', label: 'Delivered' },
+    { value: 'Processing', label: 'Processing' },
+    { value: 'Canceled', label: 'Canceled' },
   ];
 
   

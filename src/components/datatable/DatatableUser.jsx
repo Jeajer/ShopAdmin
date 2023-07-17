@@ -95,8 +95,8 @@ const DatatableUser = () => {
         className="datagrid"
         rows={data}
         columns={userColumns.concat(actionColumn)}
-        pageSize={9}
-        rowsPerPageOptions={[9]}
+        pageSize={10}
+        rowsPerPageOptions={[10]}
         checkboxSelection
       />
     </div>

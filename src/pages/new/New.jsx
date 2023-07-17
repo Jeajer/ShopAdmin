@@ -80,7 +80,7 @@ const New = ({ inputs, title }) => {
     try {
       if(title === "Add New Product")
       {
-        await setDoc(doc(db, "AppData", "Hot", "newCollection", idpro), {
+        await setDoc(doc(db, "Products", idpro), {
           ...data,
           timeStamp: serverTimestamp(),
         });

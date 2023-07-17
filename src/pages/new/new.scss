@@ -23,8 +23,8 @@
         text-align: center;
 
         img {
-          width: 100px;
-          height: 100px;
+          width: 150px;
+          height: 150px;
           border-radius: 50%;
           object-fit: cover;
         }
@@ -61,7 +61,7 @@
           }
 
           button {
-            width: 150px;
+            width: 100px;
             padding: 10px;
             border: none;
             background-color: teal;
@@ -69,6 +69,7 @@
             font-weight: bold;
             cursor: pointer;
             margin-top: 10px;
+            margin-left: 250px;
 
             &:disabled{
               background-color: rgba(3, 92, 92, 0.322);

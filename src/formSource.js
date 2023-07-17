@@ -62,6 +62,12 @@ export const userInputs = [
       placeholder: "Shoes",
     },
     {
+      id: "color",
+      label: "Color",
+      type: "text",
+      placeholder: "black",
+    },
+    {
       id: "price",
       label: "Price",
       type: "text",

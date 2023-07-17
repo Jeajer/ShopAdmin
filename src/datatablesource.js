@@ -69,6 +69,11 @@ export const productColumns = [
     width: 100,
   },
   {
+    field: "color",
+    headerName: "Color",
+    width: 100,
+  },
+  {
     field: "price",
     headerName: "Price",
     width: 100,
